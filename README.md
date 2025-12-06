@@ -17,5 +17,6 @@ facial expressions. Players earn maximum points by punching fast, shouting loudl
 - Facial expressions were analysed using DTW on FaceOSC data. DTW was chosen because players express emotions at different speeds, and this technique is effective for
   matching sequences that do not align perfectly in time. - [Implemented by Ciarán]
 
-All three ML outputs were combined inside MaxMSP, which handled timing, state resets between rounds, and visual feedback. The final score multiplied punch strength, shout confidence, and facial-expression matching to reward players who performed all three actions consistently.
+- All three ML outputs were combined inside MaxMSP, which handled timing, state resets between rounds, and visual feedback. The final score multiplied punch strength, shout
+  confidence, and facial-expression matching to reward players who performed all three actions consistently.
 
