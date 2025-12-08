@@ -26,8 +26,13 @@ working together in real time.
 
 Tools Used:
 [Arduino Library](https://docs.arduino.cc/)
+
 [Arduino LSM9DS1 Library](https://github.com/arduino-libraries/Arduino_LSM9DS1)
+
 [Wekinator](http://www.wekinator.org/)
+
 [Edge Impulse](https://edgeimpulse.com/)
+
 [Cycling74 Max 8 (MaxMSP)](https://cycling74.com/products/max)
+
 [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases)
