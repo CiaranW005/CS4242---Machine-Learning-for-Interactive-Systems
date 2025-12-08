@@ -10,17 +10,17 @@ facial expressions. Players earn maximum points by punching fast, shouting loudl
 ## Design and Implementation:
 - The shout mechanic was treated as a classification problem, allowing the system to reliably distinguish a “real” shout from
   background noise or ordinary speech. A small neural classifier was trained on recorded sample shouts, and its confidence
-  output was mapped directly into the shout portion of the final score.
+  output was mapped directly into the shout portion of the final score.                                        
   <sub>Implemented by Igor</sub>
 
 - A regression model was used to convert continuous accelerometer readings into a punch-strength value. Punches vary widely
   in angle, speed, and rotation, so regression performed better on continuous motion data than categorical approaches. The
-  model rewarded straight, high-acceleration punches while penalising swinging or angled motions.    
+  model rewarded straight, high-acceleration punches while penalising swinging or angled motions.                
   <sub>Implemented by Emily</sub>
 
 - Facial expressions were analysed using DTW applied to FaceOSC’s facial-point data. Since different players express emotions
   at different speeds, DTW allowed us to match short expression sequences to template gestures even when they were not time-
-  aligned. This process generated an expression score that acted as a multiplier in the final scoring system.
+  aligned. This process generated an expression score that acted as a multiplier in the final scoring system.            
   <sub>Implemented by Ciarán</sub>
 
 - All three ML outputs were integrated in MaxMSP, which handled state resets, timing, and the user-facing feedback loop. The
