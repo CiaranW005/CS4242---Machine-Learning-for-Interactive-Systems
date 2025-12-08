@@ -24,7 +24,7 @@ all three actions consistently.
 This combination kept the game responsive, fair, and fun to use while also demonstrating three different ML approaches 
 working together in real time.
 
-Tools Used:
+## Tools Used:
 
 [Arduino Library](https://docs.arduino.cc/)
 
