@@ -17,7 +17,6 @@ facial expressions. Players earn maximum points by punching fast, shouting loudl
   vary significantly in angle and speed,
   regression was selected because it effectively handles continuous sensor data, providing more reliable results than
   category-based methods.
-
   <sub>Implemented by Emily</sub>
 
 - Facial expressions were analysed using DTW on FaceOSC data. DTW was chosen because players express emotions at different
