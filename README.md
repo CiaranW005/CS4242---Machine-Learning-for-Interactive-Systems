@@ -38,3 +38,10 @@ working together in real time.
 - [Edge Impulse](https://edgeimpulse.com/)
 - [Cycling74 Max 8 (MaxMSP)](https://cycling74.com/products/max)
 - [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/releases)
+
+## Full Report
+
+A more detailed explanation of the system, along with diagrams and reflections, can be found in the full report:
+
+[ML for Interactive Systems - Report](report/CS4242)
+
