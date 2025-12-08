@@ -8,21 +8,25 @@ drives the score. To achieve this, we used Regression to estimate punch force, C
 facial expressions. Players earn maximum points by punching fast, shouting loudly, and making a strong, angry expression.
 
 ## Design and Implementation:
-- The shout mechanic was treated as a classification problem, allowing the system to distinguish a "real" shout from other loud sounds. The model's confidence score was then 
+- The shout mechanic was treated as a classification problem, allowing the system to distinguish a "real" shout from other
+  loud sounds. The model's confidence score was then 
   directly integrated into the final gameplay score.
   <sub>Implemented by Igor</sub>
 
-- A regression model was utilised to convert continuous accelerometer readings into a punch-strength score. Since punches can vary significantly in angle and speed,
-  regression was selected because it effectively handles continuous sensor data, providing more reliable results than category-based methods.
-  <sub>Implemented by Emily</sub>
+- A regression model was utilised to convert continuous accelerometer readings into a punch-strength score. Since punches can
+  vary significantly in angle and speed,
+  regression was selected because it effectively handles continuous sensor data, providing more reliable results than
+  category-based methods.
+``<sub>Implemented by Emily</sub>
 
-- Facial expressions were analysed using DTW on FaceOSC data. DTW was chosen because players express emotions at different speeds, and this technique is effective for
+- Facial expressions were analysed using DTW on FaceOSC data. DTW was chosen because players express emotions at different
+  speeds, and this technique is effective for
   matching sequences that do not align perfectly in time.
   <sub>Implemented by Ciarán</sub>
 
 - All three ML outputs were combined inside MaxMSP, which handled timing, state resets between rounds, and visual feedback.
   The final score multiplied punch strength, shout confidence, and facial-expression matching to reward players who performed
-all three actions consistently.
+  all three actions consistently.
 
 This combination kept the game responsive, fair, and fun to use while also demonstrating three different ML approaches 
 working together in real time.
