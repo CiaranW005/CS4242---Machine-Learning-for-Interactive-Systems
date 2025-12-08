@@ -25,6 +25,7 @@ This combination kept the game responsive, fair, and fun to use while also demon
 working together in real time.
 
 Tools Used:
+
 [Arduino Library](https://docs.arduino.cc/)
 
 [Arduino LSM9DS1 Library](https://github.com/arduino-libraries/Arduino_LSM9DS1)
