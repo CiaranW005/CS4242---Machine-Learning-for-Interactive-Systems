@@ -43,4 +43,4 @@ working together in real time.
 
 A more detailed explanation of the system, along with diagrams and reflections, can be found in the full report:
 
-[ML for Interactive Systems - Report](report/MLForInteractiveSystems.pdf)
+[ML for Interactive Systems - Report](report/MLForInteractiveSystems-Report.pdf)
